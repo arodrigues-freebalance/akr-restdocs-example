@@ -1,4 +1,4 @@
-package guru.springframework.sfgrestdocsexample.domain;
+package akr.trainingmicro.akrrestdocsexample.domain;
 
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;

@@ -11,7 +11,7 @@
     <groupId>guru.springframework</groupId>
     <artifactId>sfg-restdocs-example</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>sfg-restdocs-example</name>
+    <name>akr-restdocs-example</name>
     <description>Spring REST Docs example project</description>
 
     <properties>
@@ -41,7 +41,6 @@
         <dependency>
             <groupId>javax.xml.bind</groupId>
             <artifactId>jaxb-api</artifactId>
-            <version>${jaxb.version}</version>
         </dependency>
         <dependency>
             <groupId>com.sun.xml.bind</groupId>
@@ -100,7 +99,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.0</version>
                 <configuration>
                     <annotationProcessorPaths>
                         <path>

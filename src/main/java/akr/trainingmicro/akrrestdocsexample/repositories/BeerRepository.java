@@ -1,7 +1,8 @@
-package guru.springframework.sfgrestdocsexample.repositories;
+package akr.trainingmicro.akrrestdocsexample.repositories;
 
-import guru.springframework.sfgrestdocsexample.domain.Beer;
 import org.springframework.data.repository.PagingAndSortingRepository;
+
+import akr.trainingmicro.akrrestdocsexample.domain.Beer;
 
 import java.util.UUID;
 

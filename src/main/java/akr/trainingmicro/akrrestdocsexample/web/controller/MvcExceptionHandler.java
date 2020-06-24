@@ -1,4 +1,4 @@
-package guru.springframework.sfgrestdocsexample.web.controller;
+package akr.trainingmicro.akrrestdocsexample.web.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

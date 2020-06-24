@@ -1,4 +1,4 @@
-package guru.springframework.sfgrestdocsexample.web.model;
+package akr.trainingmicro.akrrestdocsexample.web.model;
 
 /**
  * Created by jt on 2019-05-12.

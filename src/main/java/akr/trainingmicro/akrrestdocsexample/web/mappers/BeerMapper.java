@@ -1,8 +1,9 @@
-package guru.springframework.sfgrestdocsexample.web.mappers;
+package akr.trainingmicro.akrrestdocsexample.web.mappers;
 
-import guru.springframework.sfgrestdocsexample.domain.Beer;
-import guru.springframework.sfgrestdocsexample.web.model.BeerDto;
 import org.mapstruct.Mapper;
+
+import akr.trainingmicro.akrrestdocsexample.domain.Beer;
+import akr.trainingmicro.akrrestdocsexample.web.model.BeerDto;
 
 /**
  * Created by jt on 2019-05-25.

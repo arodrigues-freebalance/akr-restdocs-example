@@ -1,4 +1,4 @@
-package guru.springframework.sfgrestdocsexample.web.model;
+package akr.trainingmicro.akrrestdocsexample.web.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -1,4 +1,4 @@
-package guru.springframework.sfgrestdocsexample.web.mappers;
+package akr.trainingmicro.akrrestdocsexample.web.mappers;
 
 import org.springframework.stereotype.Component;
 

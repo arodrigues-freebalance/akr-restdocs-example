@@ -1,9 +1,10 @@
-package guru.springframework.sfgrestdocsexample.bootstrap;
+package akr.trainingmicro.akrrestdocsexample.bootstrap;
 
-import guru.springframework.sfgrestdocsexample.domain.Beer;
-import guru.springframework.sfgrestdocsexample.repositories.BeerRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
+
+import akr.trainingmicro.akrrestdocsexample.domain.Beer;
+import akr.trainingmicro.akrrestdocsexample.repositories.BeerRepository;
 
 import java.math.BigDecimal;
 

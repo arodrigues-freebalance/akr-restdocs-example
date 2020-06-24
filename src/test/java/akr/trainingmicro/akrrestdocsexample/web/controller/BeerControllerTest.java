@@ -1,30 +1,33 @@
-package guru.springframework.sfgrestdocsexample.web.controller;
+package akr.trainingmicro.akrrestdocsexample.web.controller;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import guru.springframework.sfgrestdocsexample.domain.Beer;
-import guru.springframework.sfgrestdocsexample.repositories.BeerRepository;
-import guru.springframework.sfgrestdocsexample.web.model.BeerDto;
-import guru.springframework.sfgrestdocsexample.web.model.BeerStyleEnum;
-import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Import;
-import org.springframework.http.MediaType;
-import org.springframework.test.web.servlet.MockMvc;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.BDDMockito.given;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 import java.math.BigDecimal;
 import java.util.Optional;
 import java.util.UUID;
 
-import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.BDDMockito.given;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.http.MediaType;
+import org.springframework.test.web.servlet.MockMvc;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import akr.trainingmicro.akrrestdocsexample.domain.Beer;
+import akr.trainingmicro.akrrestdocsexample.repositories.BeerRepository;
+import akr.trainingmicro.akrrestdocsexample.web.model.BeerDto;
+import akr.trainingmicro.akrrestdocsexample.web.model.BeerStyleEnum;
 
 @WebMvcTest(BeerController.class)
-@ComponentScan(basePackages = "guru.springframework.sfgrestdocsexample.web.mappers")
+@ComponentScan(basePackages = "akr.trainingmicro.akrrestdocsexample.web.mappers")
 class BeerControllerTest {
 
     @Autowired
