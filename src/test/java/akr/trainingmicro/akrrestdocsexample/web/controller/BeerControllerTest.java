@@ -6,6 +6,8 @@ import static org.springframework.restdocs.mockmvc.MockMvcRestDocumentation.docu
 import static org.springframework.restdocs.mockmvc.RestDocumentationRequestBuilders.get;
 import static org.springframework.restdocs.mockmvc.RestDocumentationRequestBuilders.post;
 import static org.springframework.restdocs.mockmvc.RestDocumentationRequestBuilders.put;
+import static org.springframework.restdocs.payload.PayloadDocumentation.fieldWithPath;
+import static org.springframework.restdocs.payload.PayloadDocumentation.responseFields;
 import static org.springframework.restdocs.request.RequestDocumentation.parameterWithName;
 import static org.springframework.restdocs.request.RequestDocumentation.pathParameters;
 import static org.springframework.restdocs.request.RequestDocumentation.requestParameters;
@@ -61,7 +63,18 @@ class BeerControllerTest {
                 				parameterWithName("beerId").description("UUID of desired Beer to get.")
                 		),		
                 		requestParameters(
-                				parameterWithName("iscold").description("Is beer cold request parameter")	
+                				parameterWithName("iscold").description("Is beer cold request parameter")
+                		),
+                		responseFields(
+                				fieldWithPath("id").description("id of beer"),
+                                fieldWithPath("version").description("Version number"),
+                                fieldWithPath("createdDate").description("Date Created"),
+                                fieldWithPath("lastModifiedDate").description("Date Updated"),
+                                fieldWithPath("beerName").description("Beer Name"),
+                                fieldWithPath("beerStyle").description("Beer Style"),
+                                fieldWithPath("upc").description("UPC of Beer"),
+                                fieldWithPath("price").description("Price"),
+                                fieldWithPath("quantityOnHand").description("Quantity On hand")                				
                 )));
  
     }
