@@ -41,6 +41,7 @@ import akr.trainingmicro.akrrestdocsexample.web.model.BeerDto;
 import akr.trainingmicro.akrrestdocsexample.web.model.BeerStyleEnum;
 
 @ExtendWith(RestDocumentationExtension.class)
+//@AutoConfigureRestDocs(uriScheme = "https",uriHost = "something.com", uriPort = 80)
 @AutoConfigureRestDocs
 @WebMvcTest(BeerController.class)
 @ComponentScan(basePackages = "akr.trainingmicro.akrrestdocsexample.web.mappers")
